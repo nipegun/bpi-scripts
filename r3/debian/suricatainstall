@@ -1,0 +1,5 @@
+# Instalar Suricata
+./scripts/feeds install suricata
+
+# Compilar Suricata
+make package/suricata/compile V=s
