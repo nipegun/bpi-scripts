@@ -22,11 +22,7 @@
 # Descargar el SDK correcto
   wget https://downloads.openwrt.org/releases/23.05.6/targets/mediatek/filogic/openwrt-sdk-23.05.6-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
 
-# Descomprimir (necesitas zstd instalado)
-  tar --zstd -xf openwrt-sdk-23.05.6-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
-
-# O si tar no soporta --zstd directamente:
-  zstd -d openwrt-sdk-23.05.6-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+# Descomprimir
   tar xf openwrt-sdk-23.05.6-mediatek-filogic_gcc-12.3.0_musl.Linux-x86_64.tar.xz
 
 # Entrar al directorio
