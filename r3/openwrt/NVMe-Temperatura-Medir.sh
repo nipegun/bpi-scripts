@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Ejeución remota:
-#   curl -sL https://raw.githubusercontent.com/nipegun/bpi-scripts/refs/heads/main/r3-mini/NVMe-Temperatura-Medir.sh | sh
+#   curl -sL https://raw.githubusercontent.com/nipegun/bpi-scripts/refs/heads/main/r3/openwrt/NVMe-Temperatura-Medir.sh | sh
 
 for d in /dev/nvme*n1; do
   [ -e "$d" ] || break
