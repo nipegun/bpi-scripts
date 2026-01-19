@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Ejecución remota:
-#  curl -sL x | sh
+#  curl -sL https://raw.githubusercontent.com/nipegun/bpi-scripts/refs/heads/main/r3-mini/Temperatura-Medir.sh | sh
 
 for z in /sys/class/thermal/thermal_zone*; do
   [ -e "$z" ] || break
