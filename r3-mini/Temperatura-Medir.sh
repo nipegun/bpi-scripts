@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Ejecución remota:
+#  curl -sL x | sh
+
 for z in /sys/class/thermal/thermal_zone*; do
   [ -e "$z" ] || break
 
