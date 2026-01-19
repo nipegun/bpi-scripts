@@ -16,7 +16,8 @@ for d in /dev/nvme*n1; do
           | tr ' ' '_' \
           | tr -cd 'a-zA-Z0-9_')
 
-        vTemp=$(echo "$vLinea" | tr -dc '0-9' | sed 's/.*\([0-9][0-9]\)$/\1/')
+        vTemp=$(echo "$vLinea" \
+          | sed 's/.*: *\([0-9]\+\) *°C.*/\1/')
 
         [ -n "$vNombre" ] && [ -n "$vTemp" ] && \
           echo "${vDispositivo}_${vNombre}=$vTemp"
@@ -24,4 +25,3 @@ for d in /dev/nvme*n1; do
     esac
   done
 done
-
